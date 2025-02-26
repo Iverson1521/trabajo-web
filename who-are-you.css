@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Magnetar'; /* Nombre que le das a la fuente */
-    src: url('/font/Magnetar.otf') format('opentype'); /* Ruta de la fuente */
+    src: url('./font/Magnetar.otf') format('opentype'); /* Ruta de la fuente */
     font-weight: normal; /* Peso de la fuente (opcional) */
     font-style: normal; /* Estilo de la fuente (opcional) */
 }
