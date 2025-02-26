@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassiani´sGames</title>
+    <link rel="stylesheet" href="cont-estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <h1 class="titulo-principal">
+                <a href="index.html" class="td">Cassiani´s Games</a>
+            </h1>
+            <nav>
+                <a href="index.html" class="cong-nav">Inicio</a>
+                <a href="aliados.html" class="cong-nav">Aliados</a>
+                <a href="reseña.html" class="cong-nav">reseña</a>
+                <a href="who.html" class="cong-nav">Quienes somos</a>
+                <a href="contact.html" class="cong-nav">Contactos</a>
+            </nav>    
+        </div>
+    
+    </header>
+
+    <main class="main">
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes preguntas, sugerencias o quieres trabajar con nosotros? ¡Escríbenos!</p>
+            <form action="#" method="post">
+                <!-- Campo de Nombre -->
+                <div class="form-group">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required>
+                </div>
+    
+                <!-- Campo de Correo Electrónico -->
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: juan@example.com" required>
+                </div>
+    
+                <!-- Campo de Teléfono -->
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ej: +51 987 654 321">
+                </div>
+    
+                <!-- Campo de Asunto -->
+                <div class="form-group">
+                    <label for="subject">Asunto:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Selecciona un asunto</option>
+                        <option value="soporte">Soporte técnico</option>
+                        <option value="ventas">Consultas de ventas</option>
+                        <option value="alianzas">Propuestas de alianzas</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+    
+                <!-- Campo de Mensaje -->
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+    
+                <!-- Checkbox para Newsletter -->
+                <div class="form-group newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">¡Quiero recibir noticias y promociones de Cassiani's Games!</label>
+                </div>
+    
+                <!-- Botón de Enviar -->
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <!-- Sección de Enlaces Rápidos -->
+            <div class="footer-seccion">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reseña.html">Reseña</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="aliados.html">Aliados</a></li>
+                    <li><a href="who.html">Quienes Somos</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sección de Contacto -->
+            <div class="footer-seccion">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><strong>Dirección:</strong> Calle 15a - 77 b 43 Barranquilla - Colombia</li>
+                    <li><strong>Teléfono:</strong> +51 987 654 321</li>
+                    <li><strong>Email:</strong> info@cassianisgames.com</li>
+                    <li><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+    
+    
+            <!-- Sección de Newsletter -->
+            <div class="footer-seccion">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir las últimas novedades y ofertas exclusivas.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Derechos de Autor -->
+        <div class="footer-derechos">
+            <p>&copy; 2025 Cassiani's Games. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+    

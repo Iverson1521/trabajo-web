@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar&display=swap');
+
+@font-face {
+    font-family: 'Magnetar';
+    src: url('/font/Magnetar.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body {
+    background-image: url("./img/imagen3gta.jpg");
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C000FF;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo-principal {
+    font-family: 'Magnetar', sans-serif;
+    text-align: center;
+}
+
+.td{
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+.cong-nav {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.main {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-form p {
+    margin-bottom: 25px;
+    color: #ddd;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #bbb;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group.newsletter {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.newsletter input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.form-group.newsletter label {
+    margin: 0;
+    color: #ddd;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Estilos para el menú desplegable */
+.form-group select {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.form-group select option {
+    background-color: #333;
+    color: #fff;
+}
+
+.form-group select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #C000FF;
+    width: 100%; /* Asegura que el footer ocupe el 100% del ancho */
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-seccion {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-seccion h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #C000FF;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+    color: #C000FF;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #C000FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #9b00cc;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Asegura que el footer esté en la parte inferior */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .contenedor-header {
+        /*border: 2px solid white;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    .ajus-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .cong-nav {
+        font-size: 15px;
+        text-align: left;
+    }
+
+}

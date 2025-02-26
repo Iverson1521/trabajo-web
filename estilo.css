@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar&display=swap');
+
+@font-face {
+    font-family: 'Magnetar'; /* Nombre que le das a la fuente */
+    src: url('/font/Magnetar.otf') format('opentype'); /* Ruta de la fuente */
+    font-weight: normal; /* Peso de la fuente (opcional) */
+    font-style: normal; /* Estilo de la fuente (opcional) */
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body{
+    background-image: url("./img/imagen3gta.jpg");
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.header{
+    position: fixed; /* Fija el header */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Lo coloca en la parte izquierda */
+    width: 100%; /* Ancho completo */
+    background-color:#C000FF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para efecto visual */
+}
+
+.main{
+    margin-top: 220px;
+}
+
+.titulo-principal {
+    font-family: 'Magnetar', sans-serif;
+    text-align: center;
+}
+
+.td{
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+.cong-nav {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: 2px solid black;*/
+}
+
+/*voy a trabjar el main aca/*/
+
+.contenedor-main-img-inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    height: 455px;
+    margin-top: 20px;
+    background-image: url("./img/imagengta2.jpg");
+    background-size: cover;
+    background-position: center;
+    /*border: 2px solid blue;*/
+}
+
+.contenedor-main-img-inicio-letra{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /*border: 2px solid black;*/
+}
+
+.titulo-banner{
+    color: white;
+    font-size: 100px;
+    font-family:Sigmar;
+    text-align: right;
+    line-height: 1;
+    margin: 0;
+    /*border: 2px solid red*/
+    ;
+
+}
+
+.contenedor-titulo-j-d{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+/*  border: 2px solid red*/
+    
+}
+
+.titulo-j-d{
+    color: white;
+    font-size: 50px;
+    font-family:Sigmar;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+
+.contenedor-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:50px;
+    /* border: 2px solid black; */ 
+
+}
+
+.card{
+    width: 260px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 30px 30px 0px 0px;
+    /*border: 2px solid blue;*/
+    background-color: #C000FF;
+}
+
+.card-img{
+    width: 100%;
+    
+}
+
+.img{
+    width: 100%;
+    height: 400px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    /*border: 2px solid black;*/
+    margin-top: -5px;
+    padding: 5px;
+    
+}
+
+.titulo, .precio {
+    align-self: flex-start;
+}
+
+.boton-1 {
+    background-color: #FFDD00;
+    color: white;
+    border: none; /* Quita el borde por defecto */
+    padding: 10px 20px; /* Añade espacio interno */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    border-radius: 5px;
+    margin-top: 20px;
+
+    
+}
+
+.boton-1:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+.enlace-boton {
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: white; /* Color del texto del enlace */
+}
+
+/* Estilos para el footer */
+.footer {
+    width: 100% !important;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #C000FF;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-seccion {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-seccion h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #C000FF;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+    color: #C000FF;
+}
+
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #C000FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #9b00cc;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #ddd;
+}
+
+@media only screen and (max-width:1024px) {
+    
+
+    .contenedor-header{
+        border: 2px solid white;
+        display: contents;
+    }
+
+    .ajus-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;    
+    }
+
+    .cong-nav{
+        font-size: 15px;
+        text-align: left;
+        
+    }
+
+
+    .contenedor-main-img-inicio-letra{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        /*border: 2px solid black;*/
+    }
+
+    .titulo-banner{
+        color: white;
+        font-size: 30px;
+        font-family:Sigmar;
+        text-align: right;
+        line-height: 1;
+        margin: 0;
+        /*border: 2px solid red*/
+        ;
+    
+    }
+
+    .contenedor-titulo-j-d{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        /*border: 2px solid red*/
+        
+    }
+    
+    .titulo-j-d{
+        color: white;
+        font-size: 50px;
+        font-family:Sigmar;
+        text-align: center;
+        line-height: 1;
+        margin: 0;
+    }
+
+
+}
+    

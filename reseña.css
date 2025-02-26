@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar&display=swap');
+
+@font-face {
+    font-family: 'Magnetar';
+    src: url('/font/Magnetar.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./img/imagen3gta.jpg");
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C000FF;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo-principal {
+    font-family: 'Magnetar', sans-serif;
+    text-align: center;
+}
+
+.td{
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+.cong-nav {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.main {
+    margin-top: 120px; /* Ajusta según la altura del header */
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añade padding para evitar que el contenido toque los bordes */
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo del contenido */
+}
+
+/* Estilos de reseñas */
+.reseñas {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3.reseña-titulo, .reseña-calificacion {
+    max-width: 50%;
+}
+
+.contenedor-reseñas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reseña-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.reseña-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reseña-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reseña-titulo {
+    font-size: 1.5em;
+    color: #C000FF;
+    margin: 0;
+    font-family: 'Magnetar', sans-serif;
+}
+
+.reseña-calificacion {
+    font-size: 1.2em;
+    color: #ffcc00;
+}
+
+.reseña-contenido {
+    font-size: 1em;
+    color: #ddd;
+}
+
+.reseña-texto {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.reseña-autor {
+    font-style: italic;
+    text-align: right;
+    color: #bbb;
+    margin: 0;
+}
+
+.contenedor-titulo-j-d {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-j-d {
+    font-size: 2.5em;
+    font-family: 'Magnetar', sans-serif;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Estilos para el footer */
+.footer {
+    width: 100% !important;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #C000FF;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-seccion {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-seccion h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #C000FF;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+    color: #C000FF;
+}
+
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #C000FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #9b00cc;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #ddd;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .contenedor-header {
+        /*border: 2px solid white;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    .contenedor-main {
+        display: flex
+    ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .ajus-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .cong-nav {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .reseñas {
+        padding: 20px 10px; /* Reduce el padding para ahorrar espacio */
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px; /* Reduce el radio de borde */
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Reduce la sombra */
+        width: 100%;
+        margin: 20px auto; /* Ajusta el margen */
+    }
+
+    .contenedor-reseñas {
+        display: flex;
+        flex-direction: column; /* Cambia a columna para dispositivos móviles */
+        gap: 15px; /* Reduce el espacio entre tarjetas */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reseña-card {
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px; /* Reduce el padding */
+        width: 90%; /* Ocupa el 90% del ancho disponible */
+        max-width: 100%; /* Elimina el ancho máximo fijo */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .reseña-card:hover {
+        transform: translateY(-5px); /* Reduce el efecto de hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .reseña-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px; /* Reduce el margen inferior */
+    }
+
+    .reseña-titulo {
+        font-size: 1.2em; /* Reduce el tamaño de la fuente */
+        color: #C000FF;
+        margin: 0;
+        font-family: 'Magnetar', sans-serif;
+    }
+
+    .reseña-calificacion {
+        font-size: 1em; /* Reduce el tamaño de la fuente */
+        color: #ffcc00;
+    }
+
+    .reseña-contenido {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente */
+        color: #ddd;
+    }
+
+    .reseña-texto {
+        margin-bottom: 8px; /* Reduce el margen inferior */
+        line-height: 1.4; /* Ajusta el interlineado */
+    }
+
+    .reseña-autor {
+        font-style: italic;
+        text-align: right;
+        color: #bbb;
+        margin: 0;
+        font-size: 0.8em; /* Reduce el tamaño de la fuente */
+    }
+
+    .contenedor-titulo-j-d {
+        text-align: center;
+        margin-bottom: 20px; /* Reduce el margen inferior */
+    }
+
+    .titulo-j-d {
+        font-size: 1.8em; /* Reduce el tamaño de la fuente */
+        font-family: 'Magnetar', sans-serif;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}

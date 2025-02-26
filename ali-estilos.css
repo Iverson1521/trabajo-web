@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar&display=swap');
+
+@font-face {
+    font-family: 'Magnetar'; /* Nombre que le das a la fuente */
+    src: url('/font/Magnetar.otf') format('opentype'); /* Ruta de la fuente */
+    font-weight: normal; /* Peso de la fuente (opcional) */
+    font-style: normal; /* Estilo de la fuente (opcional) */
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body{
+    background-image: url("./img/imagen3gta.jpg");
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    position: fixed; /* Fija el header */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Lo coloca en la parte izquierda */
+    width: 100%; /* Ancho completo */
+    background-color:#C000FF; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para efecto visual */
+}
+
+.main{
+    margin-top: 20px;
+    /*border: 2px solid black;*/
+}
+
+.titulo-principal {
+    font-family: 'Magnetar', sans-serif;
+    text-align: center;
+}
+
+.td{
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+}
+
+.cong-nav {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: 2px solid black;*/
+}
+
+.contenedor-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /*border: 2px solid navy;*/
+}
+
+.img-aliados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-top: 50px;
+    /* height: 1100px; */
+    /*border: 2px solid white;*/
+}
+
+.ajus-img-1, .ajus-img-2{
+    width: 420px; /* Ancho fijo para todas las imágenes */
+    height: auto; /* Altura automática */
+    margin-top: 0px;
+}
+
+
+
+
+.info-letra{
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #C000FF;
+    width: 100%; /* Asegura que el footer ocupe el 100% del ancho */
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-seccion {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-seccion h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #C000FF;
+}
+
+.footer-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-seccion ul li {
+    margin-bottom: 10px;
+}
+
+.footer-seccion ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-seccion ul li a:hover {
+    color: #C000FF;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #C000FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #9b00cc;
+}
+
+.footer-derechos {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Asegura que el footer esté en la parte inferior */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .contenedor-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    .ajus-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .cong-nav {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .img-aliados {
+        display: flex;
+        flex-direction: row; /* Cambia a fila para alinear las imágenes horizontalmente */
+        justify-content: center; /* Centra las imágenes horizontalmente */
+        align-items: center; /* Centra las imágenes verticalmente */
+        flex-wrap: wrap; /* Permite que las imágenes se envuelvan si no caben en una fila */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        height: auto; /* Altura automática para que se ajuste al contenido */
+        padding: 10px; /* Añade un poco de espacio alrededor */
+    }
+
+    .ajus-img-1, .ajus-img-2 {
+        width: 80%; /* Ajusta el ancho para que la imagen ocupe más espacio */
+        max-width: 300px; /* Limita el ancho máximo para que no se vea demasiado grande */
+        height: auto; /* Mantiene la proporción de la imagen */
+        margin: 10px auto; /* Centra la imagen horizontalmente y añade margen superior e inferior */
+        display: block; /* Asegura que la imagen se comporte como un bloque */
+    }
+
+    .info-letra {
+        font-family: sans-serif;
+        font-size: 18px; /* Reduce el tamaño de la fuente para móviles */
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: center; /* Centra el texto */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+    }
+}
